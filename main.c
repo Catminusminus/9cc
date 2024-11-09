@@ -9,9 +9,8 @@ int main(int argc, char **argv) {
   // トークナイズしてパースする
   user_input = argv[1];
   token = tokenize();
-  Node *node = expr();
-
-  codegen(node);
+  program();
+  codegen();
 
   return 0;
 }
